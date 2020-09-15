@@ -13,7 +13,7 @@ async fn main() -> Result<(), actix_web::Error> {
         App::new()
         .service(index)
         )
-        .bind("0.0.0.0:8080")
+        .bind("0.0.0.0:5000")?
         .run()
         .await?;
     Ok(())
