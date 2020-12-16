@@ -2,7 +2,7 @@ use actix_web::{get, App, HttpResponse, HttpServer};
 
 #[get("/")]
 async fn index() -> Result<HttpResponse, actix_web::Error> {
-    let response_body = "Respond!";
+    let response_body = "Hello World!";
     Ok(HttpResponse::Ok().body(response_body))
 }
 
